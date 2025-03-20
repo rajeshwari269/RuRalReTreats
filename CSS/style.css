@@ -1716,7 +1716,6 @@
     }
 }
 
-
 footer {
     padding: 50px 0;
     text-align: center;
@@ -1752,16 +1751,18 @@ footer {
 }
 
 .footer-column h3 {
-    color: #ff8000;
+    color:rgb(3, 28, 57);
     margin-bottom: 15px;
     font-size: 18px;
     text-transform: uppercase;
     font-weight: 600;
 }
 
-.footer-column h3:hover{
-    text-decoration: underline;
+  
 
+.footer-column h3:hover{
+    
+    transform: scale(1.1);
 }
 
 .footer-column h4 {
@@ -1788,7 +1789,7 @@ footer {
 }
 
 .footer-column ul li a {
-    color: #ffdab2;
+    color:rgb(254, 253, 253);
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease, transform 0.3s ease;
@@ -1799,46 +1800,6 @@ footer {
     transform: translateX(5px);
     text-decoration: underline;
 }
-
-.goog-te-banner-frame {
-    display: none !important;
-}
-
-#google_translate_element select {
-    display: none;
-}
-
-body * {
-    font-size: inherit !important;
-    line-height: inherit !important;
-    letter-spacing: inherit !important;
-}
-
-.goog-te-gadget {
-    font-size: 0 !important; 
-}
-
-.goog-te-gadget span {
-    display: none !important;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .newsletter {
@@ -1859,7 +1820,7 @@ body * {
 
 .newsletter button {
     width: 30%;
-    background: #ff8000;
+    background: #0056b3;
     border: none;
     padding: 8px;
     cursor: pointer;
@@ -1870,7 +1831,7 @@ body * {
 }
 
 .newsletter button:hover {
-    background: #e66f00;
+    background:rgb(7, 3, 57);
     transform: scale(1.05);
 }
 
@@ -1909,7 +1870,7 @@ body * {
 #language-select {
     width: 100%;
     padding: 8px;
-    border: 2px solid #ff8000;
+    border: 2px solid #0056b3;
     border-radius: 5px;
     margin-top: 10px;
     cursor: pointer;
@@ -1931,9 +1892,29 @@ body * {
 
 .footer-bottom a:hover {
     text-decoration: underline;
-    color: #ff8000;
+    color:rgb(48, 10, 237);
+}
+.goog-te-banner-frame {
+    display: none !important;
 }
 
+#google_translate_element select {
+    display: none;
+}
+
+body * {
+    font-size: inherit !important;
+    line-height: inherit !important;
+    letter-spacing: inherit !important;
+}
+
+.goog-te-gadget {
+    font-size: 0 !important; 
+}
+
+.goog-te-gadget span {
+    display: none !important;
+}
 @keyframes fadeInFooter {
     from {
         transform: translateY(50px);
