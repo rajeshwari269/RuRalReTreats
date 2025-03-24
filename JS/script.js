@@ -414,3 +414,88 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+
+
+
+
+
+
+
+
+
+const blogs = [
+    {
+        title: "Top 5 Hidden Travel Destinations",
+        category: "travel",
+        excerpt: "Explore breathtaking travel spots away from the crowds.",
+        image: "https://www.livemint.com/lm-img/img/2024/11/07/900x1600/kecw_1730976458631_1730976465851.jfif",
+        link: "blog.html"
+    },
+    {
+        title: "Why Rural Homestays are a Must-Try",
+        category: "homestay",
+        excerpt: "Enjoy the peace and culture of homestay experiences.",
+        image: "https://i0.wp.com/wildindiatravels.com/wp-content/uploads/2021/02/WhatsApp-Image-2021-02-19-at-23.45.562.jpeg",
+        link: "Adventure.html"
+    },
+    {
+        title: "Eco-Friendly Travel Tips",
+        category: "travel",
+        excerpt: "Discover how to travel sustainably and reduce your carbon footprint.",
+        image: "https://www.careinsurance.com/upload_master/media/posts/August2024/8-tips-you-must-not-miss-if-planning-a-sustainable-trip.webp",
+        link: "travelSustain.html"
+    },
+    {
+        title: "Charming Farm Stays for Relaxation",
+        category: "homestay",
+        excerpt: "Stay in authentic farmhouses for a countryside retreat.",
+        image: "https://www.mariefranceasia.com/wp-content/uploads/sites/7/2017/02/holualoa-inn-750x397.png",
+        link: "travelSustain.html"
+    },
+    {
+        title: "Budget-Friendly Travel Hacks",
+        category: "travel",
+        excerpt: "Save money while still enjoying amazing trips.",
+        image: "https://surffares.com/travelguru/wp-content/uploads/2023/12/Budget-Travel-Hacks-to-Save-Your-Money-blog.jpg",
+        link: "Budget.html"
+    },
+    {
+        title: "The Best Homestay Locations in India",
+        category: "homestay",
+        excerpt: "Find the best homestays with authentic local experiences.",
+        image: "https://static.toiimg.com/photo/msid-100297327,width-96,height-65.cms",
+        link: "Adventure.html"
+    }
+];
+
+const blogContainer = document.getElementById("blogPosts");
+const tabButtons = document.querySelectorAll(".tab-button");
+
+function displayBlogs(filter) {
+    blogContainer.innerHTML = "";
+    
+    const filteredBlogs = filter === "all" ? blogs : blogs.filter(blog => blog.category === filter);
+
+    filteredBlogs.forEach(blog => {
+        const blogElement = document.createElement("div");
+        blogElement.classList.add("blog-post");
+        blogElement.innerHTML = `
+            <img src="${blog.image}" alt="${blog.title}" loading="lazy">
+            <h3>${blog.title}</h3>
+            <p>${blog.excerpt}</p>
+            <a href="${blog.link}" class="read-more1">Read More</a>
+        `;
+        blogContainer.appendChild(blogElement);
+    });
+}
+
+displayBlogs("all");
+
+tabButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        tabButtons.forEach(btn => btn.classList.remove("active"));
+        button.classList.add("active");
+        displayBlogs(button.getAttribute("data-category"));
+    });
+});
