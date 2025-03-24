@@ -1016,15 +1016,6 @@ footer {
     display: none;
 }
 
-<<<<<<< HEAD
-=======
-body * {
-    font-size: inherit !important;
-    line-height: inherit !important;
-    letter-spacing: inherit !important;
-}
-
->>>>>>> 52bf356c8d9a37fd3539c380255260d4147467bd
 .goog-te-gadget {
     font-size: 0 !important; 
 }
