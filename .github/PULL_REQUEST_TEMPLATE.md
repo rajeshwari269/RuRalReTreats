@@ -18,6 +18,3 @@ Closes #<issue_no>
 
 # 🏆Are you contributing under any open-source program ?
 <!-- Mention it here-->
-
-
-
