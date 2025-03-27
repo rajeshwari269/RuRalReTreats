@@ -93,6 +93,7 @@ function fixGoogleTranslateStyles() {
 }
 window.addEventListener("load", loadGoogleTranslate);
 
+
 document.addEventListener("DOMContentLoaded", function () {
     const menuToggle = document.getElementById("menu-toggle");
     const menuClose = document.getElementById("menu-close");
@@ -373,46 +374,23 @@ window.addEventListener("scroll", function () {
 });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 document.addEventListener("DOMContentLoaded", function () {
     const text = "India is home to some of the most beautiful and diverse trekking trails, ranging from the snow-covered peaks of the Himalayas to the lush green Western Ghats. Whether you're an experienced trekker or a beginner, there's a trail for everyone. Here are some of the top hiking trails that promise adventure, scenic beauty, and an unforgettable experience.";
 
     let index = 0;
     const introElement = document.querySelector(".intro");
-    introElement.innerHTML = ""; // Clear initial text
+    introElement.innerHTML = ""; 
 
     function typeEffect() {
         if (index < text.length) {
             introElement.innerHTML += text.charAt(index);
             introElement.classList.add("typing");
             index++;
-            setTimeout(typeEffect, 30); // Adjust speed here (30ms per letter)
+            setTimeout(typeEffect, 30); 
         } else {
             introElement.classList.remove("typing");
         }
     }
 
-    setTimeout(typeEffect, 500); // Delay before typing starts
+    setTimeout(typeEffect, 500);
 });
