@@ -94,35 +94,100 @@ function fixGoogleTranslateStyles() {
 window.addEventListener("load", loadGoogleTranslate);
 
 
+document.querySelectorAll(".faq-question").forEach(button => {
+    button.addEventListener("click", () => {
+        const answer = button.nextElementSibling;
+        answer.style.display = answer.style.display === "block" ? "none" : "block";
+    });
+});
+function filterFAQs() {
+    let searchInput = document.getElementById("faq-search").value.toLowerCase();
+    document.querySelectorAll(".faq").forEach(faq => {
+        let text = faq.innerText.toLowerCase();
+        faq.style.display = text.includes(searchInput) ? "block" : "none";
+    });
+}
+
 document.addEventListener("DOMContentLoaded", function () {
-    let currentSlide = 0;
-    function showSlide(index) {
-        const slides = document.querySelectorAll('.destination-card');
-        if (index >= slides.length) {
-            currentSlide = 0;
-        } else if (index < 0) {
-            currentSlide = slides.length - 1;
-        } else {
-            currentSlide = index;
-        }
-        const offset = -currentSlide * 100;
-        document.querySelector('.carousel-containers').style.transform = `translateX(${offset}%)`;
-        slides.forEach((slide, i) => {
-            slide.classList.remove('active');
-            if (i === currentSlide) {
-                slide.classList.add('active');
-            }
+    const menuToggle = document.getElementById("menu-toggle");
+    const menuClose = document.getElementById("menu-close");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const navLinks = document.querySelectorAll(".mobile-menu ul li a");
+    const navbar = document.querySelector(".navbar");
+    menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.add("active");
+    });
+    menuClose.addEventListener("click", () => {
+        mobileMenu.classList.remove("active");
+    });
+    navLinks.forEach(link => {
+        link.addEventListener("click", () => {
+            mobileMenu.classList.remove("active");
         });
+    });
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 50) {
+            navbar.classList.add("sticky");
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    });
+});
+document.addEventListener("DOMContentLoaded", function () {
+    const searchInput = document.getElementById("search-input");
+    const searchBtn = document.querySelector(".search-bar button");
+    const mobileSearchInput = document.getElementById("mobile-search-input");
+    const mobileSearchBtn = document.querySelector(".mobile-search-bar button");
+    function handleSearch(query) {
+        query = query.trim().toLowerCase();
+        const pages = {
+            "home": "../HTML/index.html",
+            "services": "../HTML/services.html",
+            "homestays": "../HTML/homestays.html",
+            "faq": "../HTML/faq.html",
+            "contact": "../HTML/contact.html",
+            "privacy policy": "../HTML/pp.html",
+            "terms and condition": "../HTML/t&c.html",
+            "service": "../HTML/services.html",
+            "homestay": "../HTML/homestays.html",
+            "faqs": "../HTML/faq.html",
+            "blogs": "../HTML/blog.html",
+            "blog": "../HTML/blog.html",
+            "Adventure": "../HTML/Adventure.html",
+            "Adventures": "../HTML/Adventure.html",
+            "pp": "../HTML/pp.html",
+            "t&c": "../HTML/t&c.html"
+        };
+        if (pages[query]) {
+            window.location.href = pages[query];
+        } else {
+            alert("No results found for: " + query);
+        }
     }
-    function moveSlide(direction) {
-        showSlide(currentSlide + direction);
-    }
-    showSlide(currentSlide);
-    document.querySelector('.prev1').addEventListener('click', () => moveSlide(-1));
-    document.querySelector('.next1').addEventListener('click', () => moveSlide(1));
-    setInterval(() => {
-        moveSlide(1);
-    }, 4000);
+    searchBtn.addEventListener("click", function () {
+        if (searchInput.value.trim() !== "") {
+            handleSearch(searchInput.value);
+        }
+    });
+    mobileSearchBtn.addEventListener("click", function () {
+        if (mobileSearchInput.value.trim() !== "") {
+            handleSearch(mobileSearchInput.value);
+        }
+    });
+    searchInput.addEventListener("keypress", function (event) {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            handleSearch(searchInput.value);
+        }
+    });
+    mobileSearchInput.addEventListener("keypress", function (event) {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            handleSearch(mobileSearchInput.value);
+        }
+    });
+});
+document.addEventListener("DOMContentLoaded", function () {
     const backToTopBtn = document.getElementById("backToTop");
     window.addEventListener("scroll", () => {
         if (window.scrollY > 300) {
@@ -134,20 +199,6 @@ document.addEventListener("DOMContentLoaded", function () {
     backToTopBtn.addEventListener("click", () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
     });
-    const testimonials = document.querySelectorAll(".testimonial-item");
-    let currentIndex = 0;
-    function showTestimonial(index) {
-        testimonials.forEach((testimonial, i) => {
-            testimonial.classList.toggle("active", i === index);
-        });
-    }
-    function changeTestimonial(direction) {
-        currentIndex = (currentIndex + direction + testimonials.length) % testimonials.length;
-        showTestimonial(currentIndex);
-    }
-    showTestimonial(currentIndex);
-    document.querySelector(".button.prev").addEventListener("click", () => changeTestimonial(-1));
-    document.querySelector(".button.next").addEventListener("click", () => changeTestimonial(1));
     const chatButton = document.getElementById("chatButton");
     const chatModal = document.getElementById("chatModal");
     const sendMessageButton = document.getElementById("sendMessage");
@@ -339,167 +390,48 @@ window.addEventListener("scroll", function () {
     }
 });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
-    const menuToggle = document.getElementById("menu-toggle");
-    const menuClose = document.getElementById("menu-close");
-    const mobileMenu = document.getElementById("mobile-menu");
-    const navLinks = document.querySelectorAll(".mobile-menu ul li a");
-    const navbar = document.querySelector(".navbar");
-    menuToggle.addEventListener("click", () => {
-        mobileMenu.classList.add("active");
-    });
-    menuClose.addEventListener("click", () => {
-        mobileMenu.classList.remove("active");
-    });
-    navLinks.forEach(link => {
-        link.addEventListener("click", () => {
-            mobileMenu.classList.remove("active");
-        });
-    });
-    window.addEventListener("scroll", function () {
-        if (window.scrollY > 50) {
-            navbar.classList.add("sticky");
+    const text = "India is home to some of the most beautiful and diverse trekking trails, ranging from the snow-covered peaks of the Himalayas to the lush green Western Ghats. Whether you're an experienced trekker or a beginner, there's a trail for everyone. Here are some of the top hiking trails that promise adventure, scenic beauty, and an unforgettable experience.";
+
+    let index = 0;
+    const introElement = document.querySelector(".intro");
+    introElement.innerHTML = ""; // Clear initial text
+
+    function typeEffect() {
+        if (index < text.length) {
+            introElement.innerHTML += text.charAt(index);
+            introElement.classList.add("typing");
+            index++;
+            setTimeout(typeEffect, 30); // Adjust speed here (30ms per letter)
         } else {
-            navbar.classList.remove("sticky");
-        }
-    });
-});
-document.addEventListener("DOMContentLoaded", function () {
-    const searchInput = document.getElementById("search-input");
-    const searchBtn = document.querySelector(".search-bar button");
-    const mobileSearchInput = document.getElementById("mobile-search-input");
-    const mobileSearchBtn = document.querySelector(".mobile-search-bar button");
-    function handleSearch(query) {
-        query = query.trim().toLowerCase();
-        const pages = {
-            "home": "../HTML/index.html",
-            "services": "../HTML/services.html",
-            "homestays": "../HTML/homestays.html",
-            "faq": "../HTML/faq.html",
-            "contact": "../HTML/contact.html",
-            "privacy policy": "../HTML/pp.html",
-            "terms and condition": "../HTML/t&c.html",
-            "service": "../HTML/services.html",
-            "homestay": "../HTML/homestays.html",
-            "faqs": "../HTML/faq.html",
-            "blogs": "../HTML/blog.html",
-            "blog": "../HTML/blog.html",
-            "Adventure": "../HTML/Adventure.html",
-            "Adventures": "../HTML/Adventure.html",
-            "pp": "../HTML/pp.html",
-            "t&c": "../HTML/t&c.html"
-        };
-        if (pages[query]) {
-            window.location.href = pages[query];
-        } else {
-            alert("No results found for: " + query);
+            introElement.classList.remove("typing");
         }
     }
-    searchBtn.addEventListener("click", function () {
-        if (searchInput.value.trim() !== "") {
-            handleSearch(searchInput.value);
-        }
-    });
-    mobileSearchBtn.addEventListener("click", function () {
-        if (mobileSearchInput.value.trim() !== "") {
-            handleSearch(mobileSearchInput.value);
-        }
-    });
-    searchInput.addEventListener("keypress", function (event) {
-        if (event.key === "Enter") {
-            event.preventDefault();
-            handleSearch(searchInput.value);
-        }
-    });
-    mobileSearchInput.addEventListener("keypress", function (event) {
-        if (event.key === "Enter") {
-            event.preventDefault();
-            handleSearch(mobileSearchInput.value);
-        }
-    });
-});
 
-
-
-
-
-
-
-
-
-
-const blogs = [
-    {
-        title: "Top 5 Hidden Travel Destinations",
-        category: "travel",
-        excerpt: "Explore breathtaking travel spots away from the crowds.",
-        image: "https://www.livemint.com/lm-img/img/2024/11/07/900x1600/kecw_1730976458631_1730976465851.jfif",
-        link: "blog.html"
-    },
-    {
-        title: "Why Rural Homestays are a Must-Try",
-        category: "homestay",
-        excerpt: "Enjoy the peace and culture of homestay experiences.",
-        image: "https://i0.wp.com/wildindiatravels.com/wp-content/uploads/2021/02/WhatsApp-Image-2021-02-19-at-23.45.562.jpeg",
-        link: "Adventure.html"
-    },
-    {
-        title: "Eco-Friendly Travel Tips",
-        category: "travel",
-        excerpt: "Discover how to travel sustainably and reduce your carbon footprint.",
-        image: "https://www.careinsurance.com/upload_master/media/posts/August2024/8-tips-you-must-not-miss-if-planning-a-sustainable-trip.webp",
-        link: "travelSustain.html"
-    },
-    {
-        title: "Charming Farm Stays for Relaxation",
-        category: "homestay",
-        excerpt: "Stay in authentic farmhouses for a countryside retreat.",
-        image: "https://www.mariefranceasia.com/wp-content/uploads/sites/7/2017/02/holualoa-inn-750x397.png",
-        link: "travelSustain.html"
-    },
-    {
-        title: "Budget-Friendly Travel Hacks",
-        category: "travel",
-        excerpt: "Save money while still enjoying amazing trips.",
-        image: "https://surffares.com/travelguru/wp-content/uploads/2023/12/Budget-Travel-Hacks-to-Save-Your-Money-blog.jpg",
-        link: "Budget.html"
-    },
-    {
-        title: "The Best Homestay Locations in India",
-        category: "homestay",
-        excerpt: "Find the best homestays with authentic local experiences.",
-        image: "https://static.toiimg.com/photo/msid-100297327,width-96,height-65.cms",
-        link: "Adventure.html"
-    }
-];
-
-const blogContainer = document.getElementById("blogPosts");
-const tabButtons = document.querySelectorAll(".tab-button");
-
-function displayBlogs(filter) {
-    blogContainer.innerHTML = "";
-    
-    const filteredBlogs = filter === "all" ? blogs : blogs.filter(blog => blog.category === filter);
-
-    filteredBlogs.forEach(blog => {
-        const blogElement = document.createElement("div");
-        blogElement.classList.add("blog-post");
-        blogElement.innerHTML = `
-            <img src="${blog.image}" alt="${blog.title}" loading="lazy">
-            <h3>${blog.title}</h3>
-            <p>${blog.excerpt}</p>
-            <a href="${blog.link}" class="read-more1">Read More</a>
-        `;
-        blogContainer.appendChild(blogElement);
-    });
-}
-
-displayBlogs("all");
-
-tabButtons.forEach(button => {
-    button.addEventListener("click", () => {
-        tabButtons.forEach(btn => btn.classList.remove("active"));
-        button.classList.add("active");
-        displayBlogs(button.getAttribute("data-category"));
-    });
+    setTimeout(typeEffect, 500); // Delay before typing starts
 });
