@@ -248,7 +248,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Raleway', sans-serif;
     scroll-behavior: smooth;
     }
     html, body{
@@ -1020,7 +1020,7 @@ body {
   justify-content: flex-end; /* Align content to the bottom */
   background: linear-gradient(135deg, #0077b6, #1e3a5f);
   color: white;
-  font-family: "Poppins", sans-serif;
+  font-family: "Raleway", sans-serif;
   padding: 40px 60px;
   width: 100%;
   box-sizing: border-box;
@@ -1058,7 +1058,7 @@ body {
 .footer-section h4 {
   font-size: 1.2rem;
   margin-bottom: 12px;
-  color: white;
+  color: #d8e7ee;
 }
 
 /* Links Styling */
@@ -1119,7 +1119,7 @@ body {
 
 .social-media .social-icons a:hover {
   background: #00b894;
-  color: #222;
+  color: #132441;
 }
 
 /* Newsletter */
@@ -1130,10 +1130,13 @@ body {
 .newsletter input {
   width: 70%;
   padding: 8px;
-  border: none;
-  border-radius: 4px;
+  border: 1px solid white;  border-radius: 4px;
   margin-right: 5px;
   margin-bottom: 5px;
+}
+
+.newsletter input:hover{
+    border-color: #00b894;
 }
 
 .footer-newsletter-btn {
@@ -1141,7 +1144,7 @@ body {
   background-color: #00b894;
   border: none;
   border-radius: 4px;
-  color: white;
+  color: #132441;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
