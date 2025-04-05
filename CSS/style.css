@@ -2031,6 +2031,7 @@ chatbot-body .author {
     cursor: pointer;
 }
 
+
 .footer-bottom {
     border-top: 2px solid #0056b3;
     padding: 15px;
@@ -2651,3 +2652,5 @@ body {
         padding: 8px;
     }
 }
+
+
