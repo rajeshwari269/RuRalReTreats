@@ -1584,14 +1584,21 @@
     justify-content: center;
     }
     .carousel {
-    width: 80%;
-    overflow: hidden;
-    position: relative;
-    border-radius: 15px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-    background: #f9f9f9;
-    padding: 40px 20px;
-    text-align: center;
+        width: 90%;
+        overflow: hidden;
+        position: relative;
+        border-radius: 15px;
+        box-shadow: 0 6px 20px rgba(14, 135, 221, 0.2);
+        background: linear-gradient(135deg, #e0f7fa, #b2ebf2); 
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        margin: 20px;
+        transition: transform 0.3s, box-shadow 0.3s;
+        padding: 40px 20px;
+        text-align: center;
+        position: relative;
+        margin: 0 auto;
     }
     .carousel h2 {
     text-align: center;
