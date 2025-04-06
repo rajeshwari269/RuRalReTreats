@@ -97,7 +97,11 @@ window.addEventListener("load", loadGoogleTranslate);
 document.querySelectorAll(".faq-question").forEach(button => {
     button.addEventListener("click", () => {
         const answer = button.nextElementSibling;
-        answer.style.display = answer.style.display === "block" ? "none" : "block";
+        const arrow = button.querySelector(".arrow");
+        const isVisible = answer.style.display === "block";
+        answer.style.display = isVisible ? "none" : "block";
+        arrow.style.transform = isVisible ? "rotate(0deg)" : "rotate(180deg)";
+        arrow.style.transition = "transform 0.3s ease";
     });
 });
 function filterFAQs() {
