@@ -1,8 +1,4 @@
 
-
-
-
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -72,13 +68,19 @@ h2 {
     line-height: 1.5;
 }
 
-footer {
-    text-align: center;
-    padding: 15px;
-    background: linear-gradient(135deg, #37824b, #0b8f30);
+.footer {
+    min-height: 0vh; /* Ensure the footer takes the full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Align content to the bottom */
+    background: linear-gradient(135deg, #0077b6, #1e3a5f);
     color: white;
-    margin-top: 20px;
-}
+    font-family: "Raleway", sans-serif;
+    padding: 40px 60px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
 
 @media (max-width: 768px) {
     .content {
