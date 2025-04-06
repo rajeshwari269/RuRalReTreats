@@ -897,6 +897,10 @@ footer {
     padding: 0;
 }
 
+.footer-column p, ul {
+    text-align: start;
+}
+
 .footer-column ul li {
     margin: 8px 0;
 }

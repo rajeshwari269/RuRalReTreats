@@ -924,6 +924,10 @@ footer {
     margin: 8px 0;
 }
 
+.footer-column p, ul {
+    text-align: start;
+}
+
 .footer-column ul li a {
     color:rgb(254, 253, 253);
     text-decoration: none;
