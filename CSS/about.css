@@ -2122,10 +2122,11 @@ footer {
   scroll-behavior: smooth;
   border-top: 2px solid #ffffff;
 
-  background: linear-gradient(135deg, #003366, #005f73);
-  color: black;
-  font-size: 1rem;
-  margin-top: 2rem;
+        background: linear-gradient(135deg, #003366, #005f73);
+        color: black;
+        font-size: 1rem;
+        margin-top: 2rem;
+
 }
 
 .footer-container {
@@ -2153,12 +2154,11 @@ footer {
   font-weight: 600;
 }
 
-.footer-column p, ul {
-    text-align: start;
-}
+  
 
-.footer-column h3:hover {
-  transform: scale(1.1);
+.footer-column h3:hover{
+    
+    transform: scale(1.1);
 }
 
 .footer-column h4 {
@@ -2238,40 +2238,28 @@ footer {
 }
 
 .social-icon {
-  font-size: 1.5rem;
-  padding: 12px;
-  border-radius: 50%;
-  background: #ffffff;
-  transition: 0.3s ease;
+    font-size: 1.5rem;
+    padding: 12px;
+    border-radius: 50%;
+    background: #ffffff;
+    transition: 0.3s ease;
 }
 
 .social-icon i {
-  font-size: 1.5rem;
+    font-size: 1.5rem;
 }
 
-.social-icon:nth-child(1) i {
-  color: #3b5998;
-}
-.social-icon:nth-child(2) i {
-  color: #e1306c;
-}
-.social-icon:nth-child(3) i {
-  color: #1da1f2;
-}
-.social-icon:nth-child(4) i {
-  color: #242424;
-}
-.social-icon:nth-child(5) i {
-  color: #0077b5;
-}
-.social-icon:nth-child(6) i {
-  color: #25d366;
-}
+.social-icon:nth-child(1) i { color: #3b5998; } 
+.social-icon:nth-child(2) i { color: #e1306c; } 
+.social-icon:nth-child(3) i { color: #1da1f2; } 
+.social-icon:nth-child(4) i { color: #242424; } 
+.social-icon:nth-child(5) i { color: #0077b5; } 
+.social-icon:nth-child(6) i { color: #25D366; } 
 
 .social-icon:hover {
-  transform: scale(1.2);
-  background: #000000;
-  color: white;
+    transform: scale(1.2);
+    background: #000000;
+    color: white;
 }
 
 #language-select {
