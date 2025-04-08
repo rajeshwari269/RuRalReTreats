@@ -540,7 +540,6 @@ function displayBlogs(filter) {
     blogElement.innerHTML = `
             <img src="${blog.image}" alt="${blog.title}" loading="lazy">
             <div class="blog-content">
-
             <h3>${blog.title}</h3>
             <p>${blog.excerpt}</p>
             </div>

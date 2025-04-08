@@ -2279,6 +2279,10 @@ footer {
   cursor: pointer;
 }
 
+.footer-bottom a {
+  color: #f4f4f4;
+}
+
 .footer-bottom {
   border-top: 2px solid #0056b3;
   padding: 15px;
