@@ -1067,10 +1067,6 @@ body {
   padding: 0;
 }
 
-.footer-column p, ul {
-    text-align: start;
-}
-
 .footer-section ul li {
   margin-bottom: 8px;
 }

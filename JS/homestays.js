@@ -105,12 +105,12 @@ document.addEventListener("DOMContentLoaded", function () {
             faqItems.forEach((faq) => {
                 faq.classList.remove("active");
                 faq.querySelector(".answer").style.display = "none";
-                faq.querySelector(".arrow").style.transform ="rotate(0deg)"; 
+                faq.querySelector(".arrow").innerHTML = "&#9662;"; 
             });
             if (!isOpen) {
                 item.classList.add("active");
                 answer.style.display = "block";
-                arrow.style.transform ="rotate(180deg)"; 
+                arrow.innerHTML = "&#9652;"; 
             }
         });
     });
