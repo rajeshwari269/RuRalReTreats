@@ -882,6 +882,23 @@ ul {
     font-size: 1rem;
   }
 
+
+  .carousel-sections h2 {
+    font-size: 2rem;
+  }
+
+  .destination-card {
+    padding: 25px;
+  }
+
+  .destination-card h3 {
+    font-size: 1.4rem;
+  }
+
+  .destination-card .rating {
+    font-size: 1rem;
+  }
+
   .learn-more {
     font-size: 1rem;
     padding: 0.4rem 0.9rem;
@@ -1974,6 +1991,176 @@ chatbot-body .author {
   border: 1px solid;
 }
 
+  }
+
+  .chatbot-button {
+    bottom: 60px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .back-to-top-btn {
+    bottom: 10px;
+    right: 10px;
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+
+  .chatbot-body {
+    height: 300px;
+  }
+
+  .chat-input input {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .chat-input button {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .chatbot-modal {
+    width: 90%;
+    bottom: 50px;
+    right: 5%;
+  }
+
+  .chatbot-button {
+    bottom: 50px;
+    right: 10px;
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+  }
+
+  .back-to-top-btn {
+    bottom: 8px;
+    right: 8px;
+    padding: 8px 14px;
+    font-size: 12px;
+  }
+
+  .chatbot-body {
+    height: 280px;
+  }
+
+  .chat-input input {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .chat-input button {
+    padding: 7px 10px;
+    font-size: 12px;
+  }
+
+  .close-chatbot {
+    font-size: 20px;
+  }
+}
+
+.footer {
+  min-height: 0vh; /* Ensure the footer takes the full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Align content to the bottom */
+  background: linear-gradient(135deg, #0077b6, #1e3a5f);
+  color: white;
+  font-family: "Raleway", sans-serif;
+  padding: 40px 60px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Footer container centered with max-width */
+.footer-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+}
+
+/* Footer Row */
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Footer Section */
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+
+.footer-title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.footer-section h3:hover {
+  transform: scale(1.1);
+}
+
+.footer-section h4 {
+  color: #ffffff;
+  margin-bottom: 5px;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.footer-section p {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 8px 0;
+}
+
+.footer-section a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+/* Social Media & Newsletter */
+.social-media .social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-media .social-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid;
+}
+
 .social-media .social-icons a:hover {
   background: #00b894;
   color: #132441;
@@ -1992,6 +2179,25 @@ chatbot-body .author {
   margin-right: 5px;
   margin-bottom: 5px;
 }
+
+.newsletter input:hover {
+  border-color: #00b894;
+}
+
+.footer-newsletter-btn {
+  padding: 8px 15px;
+  background-color: #00b894;
+  border: none;
+  border-radius: 4px;
+  color: #132441;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.footer-newsletter-btn:hover {
+  background-color: #008e72;
+}
+
 
 .newsletter input:hover {
   border-color: #00b894;
@@ -2042,6 +2248,33 @@ chatbot-body .author {
   cursor: pointer;
 }
 
+.footer-bottom {
+  border-top: 2px solid #0056b3;
+  padding: 15px;
+  margin-top: 20px;
+  background: #f4f4f4;
+}
+
+.footer-bottom a {
+  color: #0056b3;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+#language-select {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #0056b3;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
 .footer-bottom a {
   color: #f4f4f4;
   text-decoration: none;
@@ -2051,6 +2284,15 @@ chatbot-body .author {
 
 .footer-bottom a:hover {
   text-decoration: underline;
+  color: rgb(48, 10, 237);
+}
+
+.footer-section ul li a:hover {
+  color: #00b894;
+  transform: translateX(5px);
+  text-decoration: underline;
+}
+
   color: rgb(48, 10, 237);
 }
 
@@ -2571,6 +2813,207 @@ body {
   background: #0056b3;
 }
 
+}
+
+.blog-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.blog-post {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+  max-width: 350px;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.blog-post:hover {
+  transform: translateY(-5px);
+}
+
+.blog-post img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.blog-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.blog-content h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  min-height: 60px;
+}
+
+.blog-content p {
+  font-size: 0.95rem;
+  color: #555;
+  flex-grow: 1;
+  min-height: 60px;
+  margin-bottom: 15px;
+  text-align: start;
+}
+
+.read-more {
+  text-align: center;
+  background: #007bff;
+  color: #fff;
+  padding: 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.read-more:hover {
+  background: #0056b3;
+}
+
+.blog-post {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.4s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .blog-post::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(130deg, #0077cc, #00c6ff);
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    background-size: 300% 300%;
+    animation: borderFlow 3s linear infinite;
+    border-radius: 18px;
+  }
+  
+  .blog-post:hover::before {
+    opacity: 1;
+  }
+  
+  .blog-post:hover {
+    transform: scale(1.01); /* Subtle scale */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  }
+  
+  @keyframes borderFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .blog-post * {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .image-overlay-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+  }
+  
+  .image-overlay-wrapper img {
+    width: 100%;
+    display: block;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+  }
+  
+  .image-overlay-wrapper:hover img {
+    transform: scale(1.03); /* Reduced scale */
+  }
+  
+  .image-hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 12px;
+  }
+  
+  .image-overlay-wrapper:hover .image-hover-overlay {
+    opacity: 1;
+  }
+  
+  .blog-post h3 {
+    font-size: 1.2rem;
+    color: #222;
+    margin: 0;
+    transition: color 0.3s ease;
+  }
+  
+  .blog-post:hover h3 {
+    color: #fff;
+  }
+  
+  .blog-post p {
+    font-size: 0.95rem;
+    color: #555;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .blog-post:hover p {
+    color: #e0e0e0;
+  }
+  
+/* Read More button default style */
+.read-more1 {
+    margin-top: auto;
+    align-self: flex-start;
+    padding: 8px 16px;
+    background-color: #005f73;  /* Default blue */
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    z-index: 2;
+    position: relative;
+  }
+  
+  /* On card hover, change button to white with blue text */
+  .blog-post:hover .read-more1 {
+    background-color: #ffffff;
+    color: #0077cc;
+  }
+  
+  /* When hovering the button itself */
+  .read-more1:hover {
+    background-color: #003f4f;  /* Darker blue */
+    color: #fff;
+  }
+  
 .tabs {
   display: flex;
   justify-content: center;

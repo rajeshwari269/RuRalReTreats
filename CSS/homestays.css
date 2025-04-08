@@ -2439,6 +2439,15 @@ select:focus {
 
 .footer-bottom a {
   color: #f4f4f4;
+.footer-bottom {
+  border-top: 2px solid #0056b3;
+  padding: 15px;
+  margin-top: 20px;
+  background: #f4f4f4;
+}
+
+.footer-bottom a {
+  color: #0056b3;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;

@@ -524,6 +524,16 @@ function displayBlogs(filter) {
   const filteredBlogs =
     filter === "all" ? blogs : blogs.filter((blog) => blog.category === filter);
 
+
+    filteredBlogs.forEach(blog => {
+        const blogElement = document.createElement("div");
+        blogElement.classList.add("blog-post");
+        blogElement.innerHTML = `
+            <div class="image-overlay-wrapper">
+                <img src="${blog.image}" alt="${blog.title}" loading="lazy">
+                <div class="image-hover-overlay"></div>
+            </div>
+
   filteredBlogs.forEach((blog) => {
     const blogElement = document.createElement("div");
     blogElement.classList.add("blog-post");
