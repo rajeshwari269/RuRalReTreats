@@ -2578,6 +2578,138 @@ body {
   background: #0056b3;
 }
 
+.blog-post {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.4s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .blog-post::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(130deg, #0077cc, #00c6ff);
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    background-size: 300% 300%;
+    animation: borderFlow 3s linear infinite;
+    border-radius: 18px;
+  }
+  
+  .blog-post:hover::before {
+    opacity: 1;
+  }
+  
+  .blog-post:hover {
+    transform: scale(1.01); /* Subtle scale */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  }
+  
+  @keyframes borderFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .blog-post * {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .image-overlay-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+  }
+  
+  .image-overlay-wrapper img {
+    width: 100%;
+    display: block;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+  }
+  
+  .image-overlay-wrapper:hover img {
+    transform: scale(1.03); /* Reduced scale */
+  }
+  
+  .image-hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 12px;
+  }
+  
+  .image-overlay-wrapper:hover .image-hover-overlay {
+    opacity: 1;
+  }
+  
+  .blog-post h3 {
+    font-size: 1.2rem;
+    color: #222;
+    margin: 0;
+    transition: color 0.3s ease;
+  }
+  
+  .blog-post:hover h3 {
+    color: #fff;
+  }
+  
+  .blog-post p {
+    font-size: 0.95rem;
+    color: #555;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .blog-post:hover p {
+    color: #e0e0e0;
+  }
+  
+/* Read More button default style */
+.read-more1 {
+    margin-top: auto;
+    align-self: flex-start;
+    padding: 8px 16px;
+    background-color: #005f73;  /* Default blue */
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    z-index: 2;
+    position: relative;
+  }
+  
+  /* On card hover, change button to white with blue text */
+  .blog-post:hover .read-more1 {
+    background-color: #ffffff;
+    color: #0077cc;
+  }
+  
+  /* When hovering the button itself */
+  .read-more1:hover {
+    background-color: #003f4f;  /* Darker blue */
+    color: #fff;
+  }
+  
+  
+
 .tabs {
   display: flex;
   justify-content: center;
