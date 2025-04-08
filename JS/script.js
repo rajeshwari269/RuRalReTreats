@@ -485,7 +485,10 @@ function displayBlogs(filter) {
         const blogElement = document.createElement("div");
         blogElement.classList.add("blog-post");
         blogElement.innerHTML = `
-            <img src="${blog.image}" alt="${blog.title}" loading="lazy">
+            <div class="image-overlay-wrapper">
+                <img src="${blog.image}" alt="${blog.title}" loading="lazy">
+                <div class="image-hover-overlay"></div>
+            </div>
             <h3>${blog.title}</h3>
             <p>${blog.excerpt}</p>
             <a href="${blog.link}" class="read-more1">Read More</a>
