@@ -466,10 +466,11 @@ body {
 
 .cta-button:hover {
   transform: scale(1.05);
+  font-weight: 600;
 }
 
 .btn-cta {
-  background: linear-gradient(135deg, #ff7e5f, #ff3f6c);
+  background: linear-gradient(135deg, #ef6b4a, #ff3f6c);
   color: #fff;
   padding: 14px 36px;
   font-size: 1.2rem;
@@ -477,7 +478,7 @@ body {
   text-transform: uppercase;
   border-radius: 50px;
   text-decoration: none;
-  box-shadow: 0px 4px 12px rgba(255, 63, 108, 0.4);
+  box-shadow: 0px 4px 12px rgba(253, 48, 96, 0.4);
   transition: all 0.3s ease-in-out;
 }
 .btn-cta:hover {
@@ -651,6 +652,21 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
+
+.homestay-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.homestay-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
 .location-container {
   display: flex;
   flex-wrap: wrap;
@@ -745,6 +761,18 @@ select {
   backdrop-filter: blur(17px);
   cursor: pointer;
   transition: all 0.4s ease-in-out;
+}
+
+.homestay-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.homestay-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Smooth hover effect */
