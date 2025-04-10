@@ -2007,7 +2007,7 @@ chatbot-body .author {
   border: 1px solid;
 }
 
-  }
+
 
   .chatbot-button {
     bottom: 60px;
@@ -2037,7 +2037,7 @@ chatbot-body .author {
     padding: 8px 12px;
     font-size: 14px;
   }
-}
+
 
 @media (max-width: 480px) {
   .chatbot-modal {
@@ -2316,8 +2316,8 @@ chatbot-body .author {
   text-decoration: underline;
 }
 
-  color: rgb(48, 10, 237);
-}
+ 
+
 
 .footer-section ul li a:hover {
   color: #00b894;
@@ -2833,10 +2833,12 @@ body {
 }
 
 .read-more:hover {
-  background: #0056b3;
+  background: #032e5d;
+  box-shadow: 0 4px 8px black;
+  color: #fff;
 }
 
-}
+
 
 .blog-container {
   display: flex;
