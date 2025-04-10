@@ -596,8 +596,9 @@ textarea {
 }
 
 .btn:hover {
-  background: linear-gradient(135deg, #ff8000, #cc6600);
+  background: linear-gradient(135deg, #10b607, #02df41);
   transform: scale(1.05);
+  box-shadow: 0 4px 8px black;
 }
 
 .map-container {
