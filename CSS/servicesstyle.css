@@ -416,6 +416,7 @@ h1 {
 .service:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #e0f7fa, #b2ebf2);;
 }
 .service::before {
   content: "";
