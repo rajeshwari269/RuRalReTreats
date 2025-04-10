@@ -425,10 +425,14 @@ h1 {
 .container {
   display: flex;
   justify-content: space-between;
-  gap: 50px;
+  gap: 52px;
   max-width: 1200px;
   margin: auto;
   flex-wrap: wrap;
+}
+
+.container:hover{
+  box-shadow: 0 4px 8px black;
 }
 
 .contact-info {
