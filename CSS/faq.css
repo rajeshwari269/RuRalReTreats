@@ -439,8 +439,8 @@ body {
 
 .faq-question {
   width: 100%;
-  background: rgb(57, 130, 239);
-  color: white;
+  background: rgb(245, 245, 246);
+  color: #000;
   padding: 15px;
   border: none;
   font-size: 18px;
@@ -452,15 +452,17 @@ body {
 }
 
 .faq-question:hover {
-  background: rgb(17, 20, 199);
+  background: rgb(65, 68, 212);
+  color: #fff;
 }
 
 .faq-answer {
   display: none;
   padding: 15px;
   font-size: 16px;
-  background: #fff;
+  background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
   border-top: 1px solid #ff8000;
+  box-shadow: 0 4px 8px #000;
 }
 
 .chatbot-button {
