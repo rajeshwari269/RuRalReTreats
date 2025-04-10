@@ -473,6 +473,7 @@ body {
   background: linear-gradient(135deg, #f66541, #ff3f6c,rgb(251, 198, 4));
 
   background: linear-gradient(135deg, #ef6b4a, #ff3f6c);
+
   color: #fff;
   padding: 14px 36px;
   font-size: 1.2rem;
@@ -487,6 +488,7 @@ body {
 }
 .btn-cta:hover {
   background: linear-gradient(135deg, #1680fa, #1e1eff,rgb(217, 3, 217));
+  background: linear-gradient(135deg, #fa8416, #ff1e56);
   transform: scale(1.05);
   box-shadow: 0px 6px 18px rgba(255, 63, 108, 0.6);
 }
