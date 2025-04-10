@@ -464,9 +464,11 @@ body {
   text-decoration: none;
   box-shadow: 0px 4px 12px rgba(255, 63, 108, 0.4);
   transition: all 0.3s ease-in-out;
+  display: inline-block;
+  text-align: center;
 }
 .btn-cta:hover {
-  background: linear-gradient(135deg, #fa8416, #ff1e56);
+  background: linear-gradient(135deg, #1680fa, #1e1eff,rgb(217, 3, 217));
   transform: scale(1.05);
   box-shadow: 0px 6px 18px rgba(255, 63, 108, 0.6);
 }
