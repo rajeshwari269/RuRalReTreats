@@ -260,7 +260,16 @@ body {
   border-radius: 12px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   animation: fadeIn 1.5s ease-in-out;
+  font-weight: 500;
 }
+
+.subscribe:hover{
+  background: linear-gradient(135deg, #8b1eff, #f30be0);
+  color: #000;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
 
 .subscribe-content {
   width: 100%;
@@ -1490,7 +1499,10 @@ body {
 }
 
 .footer-newsletter-btn:hover {
-  background-color: #008e72;
+    background:  #8b1eff;
+    color: #000;
+    font-weight: 600;
+    border-radius: 8px;
 }
 
 /* Footer Bottom */
