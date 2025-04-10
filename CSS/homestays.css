@@ -465,7 +465,6 @@ body {
 }
 
 .cta-button:hover {
-  background: linear-gradient(135deg, #00b894, #0073e6);
   transform: scale(1.05);
 }
 
