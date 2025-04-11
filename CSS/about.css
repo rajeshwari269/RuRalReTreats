@@ -14,6 +14,22 @@ body {
   width: 100% !important;
   height: 100% !important;
   overflow-x: hidden !important;
+    font-family: 'Arial', sans-serif; 
+    line-height: 1.6; 
+    color: #0d0c0c; 
+  .carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  
+}
+}
+
+#about-us {
+  background-color: #f9f9f9; 
+  padding: 40px 20px; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 .nav-menu {
   list-style: none;
@@ -429,6 +445,11 @@ body {
   font-weight: 500;
   opacity: 0.9;
 }
+.hero-image{
+position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
 
 .cta-button {
   display: inline-block;
@@ -558,6 +579,23 @@ body {
   }
 }
 
+ul {
+  list-style-type: none; 
+  padding: 0; 
+  text-align: center; 
+}
+
+li {
+  border-radius: 5px; 
+  margin: 10px 0; 
+  padding: 10px; 
+  transition: background 0.3s ease; 
+}
+
+li:hover {
+  background: #a7d1de; 
+}
+
 .brand-intro {
   display: flex;
   align-items: center;
@@ -574,10 +612,41 @@ body {
   animation: fadeInLeft 1.5s ease-in-out;
 }
 
+h1, h2 {
+  color: #0077cc; 
+  margin-bottom: 20px; 
+  text-align: center; 
+}
+
+h1 {
+  font-size: 2.5em; 
+  font-weight: bold; 
+}
+
+h2 {
+  font-size: 1.8em; 
+  margin-top: 30px; 
+}
+
 .brand-content h2 {
   font-size: 2.5rem;
   color: #003366;
   margin-bottom: 10px;
+}
+
+
+a {
+  display: inline-block; 
+  color: #fff; 
+  padding: 10px 20px; 
+  border-radius: 5px; 
+  text-decoration: none; 
+  transition: background 0.3s ease; 
+  margin-top: 20px; 
+}
+
+a:hover {
+  color: #005fa3; 
 }
 
 .brand-content p {
