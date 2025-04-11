@@ -437,16 +437,43 @@ body {
   padding: 12px 25px;
   font-size: 1.2rem;
   font-weight: bold;
-  border-radius: 8px;
+  border-radius: 6px;
   text-decoration: none;
   transition: 0.4s ease-in-out;
   box-shadow: 0 4px 10px rgba(0, 153, 255, 0.5);
+  background: linear-gradient(135deg, #0073e6, #00b894); /* Gradient background */
+  border: none; 
+  cursor: pointer; 
+  text-align: center;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  display: inline-block;
 }
 
 .cta-button:hover {
   background: linear-gradient(135deg, #0698b8, #035d95);
   transform: scale(1.1);
   box-shadow: 0 6px 15px rgba(1, 77, 128, 0.882);
+  background: linear-gradient(135deg, #00b894, #0073e6); 
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0, 115, 230, 0.5); 
+}
+.cta-button:active
+{
+  transform: translateY(1px); 
+  box-shadow: 0 2px 10px rgba(0, 115, 230, 0.3);
+}
+
+.cta-button:focus
+{
+  outline: none; 
+  box-shadow: 0 0 5px rgba(0, 115, 230, 0.7); 
+}
+
+@media (max-width: 600px) {
+  .cta-button {
+    width: 100%; 
+    font-size: 1rem; 
+  }
 }
 
 @keyframes fadeIn {
