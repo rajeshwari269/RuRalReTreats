@@ -454,7 +454,7 @@ body {
   animation: fadeInUp 2.5s ease-in-out;
 }
 .btn-cta {
-  background: linear-gradient(135deg, #ff7e5f, #ff3f6c);
+  background: linear-gradient(135deg ,rgb(255, 187, 0),#ff7e5f,#d72750);
   color: #fff;
   padding: 14px 36px;
   font-size: 1.2rem;
@@ -468,7 +468,10 @@ body {
 .btn-cta:hover {
   background: linear-gradient(135deg, #ff3f6c, #ff1e56);
   transform: scale(1.05);
-  box-shadow: 0px 6px 18px rgba(255, 63, 108, 0.6);
+  box-shadow: 0px 8px 18px rgba(255, 63, 108, 0.6);
+  background: linear-gradient(135deg, #00b894,rgb(8, 90, 244), #0073e6);
+  font-weight: 600;
+  
 }
 .btn-secondary {
   background: transparent;
@@ -484,7 +487,7 @@ body {
 }
 .btn-secondary:hover {
   background: #fff;
-  color: #ff3f6c;
+  color: #304af8;
   transform: scale(1.05);
 }
 @keyframes fadeInUp {
@@ -1030,7 +1033,7 @@ select:focus {
   transition: background 0.3s ease, transform 0.3s;
 }
 .view-details-btn:hover {
-  background: linear-gradient(to right, #0056b3, #003f7f);
+  /*background: linear-gradient(to right, #0056b3, #003f7f);*/
   transform: scale(1.05);
 }
 .add-to-wishlist-btn {
