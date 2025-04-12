@@ -887,7 +887,7 @@ select:focus {
 }
 .filters {
   display: flex;
-  flex-wrap: wrap;git 
+  flex-wrap: wrap;
   gap: 30px;
   justify-content: space-between;
 }
@@ -1372,7 +1372,7 @@ select:focus {
   border-radius: 5px; /* Rounded corners */
   margin-bottom: 15px; /* Space between fields */
   font-size: 1rem; /* Font size */
-  : border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  border-color: 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
 }
 
 .booking-section input:focus,

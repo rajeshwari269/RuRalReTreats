@@ -126,22 +126,22 @@ document.addEventListener("DOMContentLoaded", function () {
     function handleSearch(query) {
         query = query.trim().toLowerCase();
         const pages = {
-            "home": "../HTML/index.html",
-            "services": "../HTML/services.html",
-            "homestays": "../HTML/homestays.html",
-            "faq": "../HTML/faq.html",
-            "contact": "../HTML/contact.html",
-            "privacy policy": "../HTML/pp.html",
-            "terms and condition": "../HTML/t&c.html",
-            "service": "../HTML/services.html",
-            "homestay": "../HTML/homestays.html",
-            "faqs": "../HTML/faq.html",
-            "blogs": "../HTML/blog.html",
-            "blog": "../HTML/blog.html",
-            "Adventure": "../HTML/Adventure.html",
-            "Adventures": "../HTML/Adventure.html",
-            "pp": "../HTML/pp.html",
-            "t&c": "../HTML/t&c.html"
+            "home": "../index.html",
+            "services": "../services.html",
+            "homestays": "../homestays.html",
+            "faq": "../faq.html",
+            "contact": "../contact.html",
+            "privacy policy": "../pp.html",
+            "terms and condition": "../t&c.html",
+            "service": "../services.html",
+            "homestay": "../homestays.html",
+            "faqs": "../faq.html",
+            "blogs": "../blog.html",
+            "blog": "../blog.html",
+            "Adventure": "../Adventure.html",
+            "Adventures": "../Adventure.html",
+            "pp": "../pp.html",
+            "t&c": "../t&c.html"
         };
         if (pages[query]) {
             window.location.href = pages[query];
