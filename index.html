@@ -25,11 +25,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet"> 
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script><script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/splash.css">
 </head>
-<body>
+<body class="no-scroll">
 
- 
- <header>
+    <div class="splash-screen" id="splash">
+      <div class="sparkles"></div>
+  
+      <div class="logo">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+       
+            <circle cx="50" cy="50" r="48" stroke="#fff" stroke-width="4" fill="none"/>
+        
+            <defs>
+              <clipPath id="circleView">
+                <circle cx="50" cy="50" r="45" />
+              </clipPath>
+            </defs>
+            <image 
+              href="/favicon/favicon-192x192.png" 
+              x="5" 
+              y="5" 
+              width="90" 
+              height="90"
+              clip-path="url(#circleView)"
+              preserveAspectRatio="xMidYMid slice"
+            />
+          </svg>
+        </div>
+      <div class="site-name">Rural-Retreats</div>
+      <div class="progress-bar">
+        <div class="progress-bar-fill"></div>
+      </div>
+      <audio id="introSound" src="https://www.soundjay.com/nature/sounds/wind-chimes-1.mp3" preload="auto"></audio>
+    </div>
+  
+   <header>
     <nav class="navbar">
         <div class="nav-container">
             
@@ -760,5 +791,6 @@
 </div>
 
 <script src="../JS/script.js"></script>
+<script src="../JS/splash.js"></script>
 </body>
 </html>

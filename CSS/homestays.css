@@ -470,11 +470,14 @@ body {
 }
 
 .btn-cta {
+
+
+  background: linear-gradient(135deg ,rgb(255, 187, 0),#ff7e5f,#d72750);
+
   background: linear-gradient(135deg ,rgb(255, 187, 0),#ff7e5f,#d72750);
   background: linear-gradient(135deg, #f66541, #ff3f6c,rgb(251, 198, 4));
 
   background: linear-gradient(135deg, #ef6b4a, #ff3f6c);
-
   color: #fff;
   padding: 14px 36px;
   font-size: 1.2rem;
@@ -512,6 +515,8 @@ body {
   background: #fff;
 
   color: #304af8;
+
+
   color: #fe3060;
 
   transform: scale(1.05);
