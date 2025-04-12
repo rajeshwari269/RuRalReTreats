@@ -452,9 +452,32 @@ body {
   justify-content: center;
   gap: 20px;
   animation: fadeInUp 2.5s ease-in-out;
+  background: linear-gradient(135deg, #0073e6, #00b894);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    text-align: center;
+    display: inline-block;
 }
+
+.cta-button:hover {
+  transform: scale(1.05);
+  font-weight: 600;
+}
+
 .btn-cta {
+
+
   background: linear-gradient(135deg ,rgb(255, 187, 0),#ff7e5f,#d72750);
+
+  background: linear-gradient(135deg ,rgb(255, 187, 0),#ff7e5f,#d72750);
+  background: linear-gradient(135deg, #f66541, #ff3f6c,rgb(251, 198, 4));
+
+  background: linear-gradient(135deg, #ef6b4a, #ff3f6c);
   color: #fff;
   padding: 14px 36px;
   font-size: 1.2rem;
@@ -462,11 +485,14 @@ body {
   text-transform: uppercase;
   border-radius: 50px;
   text-decoration: none;
-  box-shadow: 0px 4px 12px rgba(255, 63, 108, 0.4);
+  box-shadow: 0px 4px 12px rgba(253, 48, 96, 0.4);
   transition: all 0.3s ease-in-out;
+  display: inline-block;
+  text-align: center;
 }
 .btn-cta:hover {
-  background: linear-gradient(135deg, #ff3f6c, #ff1e56);
+  background: linear-gradient(135deg, #1680fa, #1e1eff,rgb(217, 3, 217));
+  background: linear-gradient(135deg, #fa8416, #ff1e56);
   transform: scale(1.05);
   box-shadow: 0px 8px 18px rgba(255, 63, 108, 0.6);
   background: linear-gradient(135deg, #00b894,rgb(8, 90, 244), #0073e6);
@@ -487,8 +513,16 @@ body {
 }
 .btn-secondary:hover {
   background: #fff;
+
   color: #304af8;
+
+
+  color: #fe3060;
+
   transform: scale(1.05);
+}
+.hero-content h1{
+  font-weight: 600;
 }
 @keyframes fadeInUp {
   from {
@@ -522,6 +556,23 @@ body {
     font-size: 1rem;
   }
 }
+
+@media (max-width: 768px) {
+  .location-title {
+      font-size: 2rem;
+  }
+
+  .cta-button {
+      width: 100%;
+      padding: 10px;
+  }
+
+  .location-container {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .hero-section {
     height: 85vh;
@@ -612,6 +663,54 @@ body {
   color: #555;
   margin-bottom: 25px;
 }
+
+  .homestay-location {
+    background-image: url('path/to/your/background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.homestay-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.homestay-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.location-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.location-title {
+  font-size: 2.5rem;
+  color: #003366; /* Dark blue for contrast */
+  margin-bottom: 20px;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.location-description {
+  font-size: 1.1rem;
+  color: #555; /* Soft gray for readability */
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: justify; /* Justify text for better alignment */
+}
+
 /* .filters-container {
     background: #ffffff;
     padding: 25px;
@@ -685,6 +784,18 @@ select {
   transition: all 0.4s ease-in-out;
 }
 
+.homestay-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.homestay-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
 /* Smooth hover effect */
 select:hover {
   background: rgba(0, 102, 204, 0.3);
@@ -753,29 +864,30 @@ select:focus {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
   background: rgba(213, 215, 216, 0.9);
 }
+
 .filter-heading {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #333;
+  color: #282828;
   text-align: center;
   margin-bottom: 12px;
 }
 
 .filters-container:hover {
   transform: scale(1.02);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(45, 44, 44, 0.3);
 }
 
 .filters-container h3 {
   text-align: center;
   font-size: 1.8rem;
-  color: #333;
+  color: #222222;
   font-weight: bold;
   margin-bottom: 40px;
 }
 .filters {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap;git 
   gap: 30px;
   justify-content: space-between;
 }
@@ -923,6 +1035,20 @@ select:focus {
   margin: 30px 0;
 }
 
+.hearts-of-rural-india {
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+  color: white; /* Ensure text is readable against the background */
+}
+
+.hearts-title {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
 .homestay-card {
   background: #ffffff;
   border-radius: 12px;
@@ -932,11 +1058,60 @@ select:focus {
   flex-direction: column;
   transition: transform 0.4s ease, box-shadow 0.3s ease-in-out;
   position: relative;
+    background: rgba(246, 251, 250, 0.9); 
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
+
+.homestay-card img {
+  width: 100%; 
+  height: 200px; 
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.homestay-card h3 {
+  font-size: 1.5rem;
+  color: #0073e6; 
+  margin: 15px; 
+  text-align: center; 
+}
+
+.homestay-card p {
+  font-size: 1rem; 
+  color: #0d0d0d; 
+  padding: 0 15px; 
+  text-align: center; 
+}
+
 .homestay-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-6px); /* Lift effect on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
+
+.homestay-card:hover img {
+  transform: scale(1.05);
+}
+
+
+.homestay-card .read-more {
+  display: block; 
+  background: linear-gradient(135deg, #0073e6, #00b894); 
+  color: white; 
+  padding: 10px;
+  border-radius: 6px; 
+  text-align: center; 
+  text-decoration: none;
+  margin: 15px auto; 
+  transition: background 0.3s ease, transform 0.3s ease; 
+}
+
+.homestay-card .read-more:hover {
+  background: linear-gradient(135deg, #00b894, #0073e6); 
+  transform: scale(1.05);
+}
+
 .image-wrapper {
   position: relative;
   overflow: hidden;
@@ -963,6 +1138,20 @@ select:focus {
   font-weight: bold;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
+
+.testimonial {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin: 20px 0;
+}
+
+.testimonial p {
+  font-style: italic;
+  text-align: center;
+}
+
 .card-content {
   padding: 20px;
   flex-grow: 1;
@@ -2871,4 +3060,5 @@ select:focus {
     opacity: 1;
     transform: translateY(0);
   }
+}
 }
