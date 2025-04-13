@@ -773,6 +773,10 @@ ul {
   margin-bottom: 15px;
 }
 
+.destination-card p{
+  color: black;
+  font-weight: 550;
+}
 .destination-card .rating {
   color: #ffcc00;
   margin-top: 15px;
