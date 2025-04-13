@@ -2338,7 +2338,7 @@ chatbot-body .author {
 }
 
 .footer-bottom a {
-  color: #f4f4f4;
+  color: #1a78d5;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
@@ -2361,6 +2361,24 @@ chatbot-body .author {
   transform: translateX(5px);
   text-decoration: underline;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .goog-te-banner-frame {
   display: none !important;
@@ -2937,7 +2955,9 @@ body {
   background-color: #0056b3; /* Darker shade on hover */
     transform: scale(1.05);
 }
-
+  background: #013e7e;
+  transform: scale(1.05);
+}
 .blog-container {
   display: flex;
   flex-wrap: wrap;
