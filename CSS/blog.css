@@ -264,7 +264,7 @@ body {
 }
 
 .subscribe:hover{
-  background: linear-gradient(135deg, #8b1eff, #f30be0);
+  background: linear-gradient(135deg, #39c4ff,rgb(27, 119, 217), #0745e1);
   color: #000;
   font-weight: 600;
   border-radius: 8px;
@@ -309,7 +309,7 @@ body {
 
 .subscribe button {
   padding: 12px 20px;
-  background: orange;
+  background: linear-gradient(rgb(240, 114, 11),rgb(235, 175, 10),red);
   border: none;
   color: white;
   font-weight: bold;
@@ -320,7 +320,7 @@ body {
 }
 
 .subscribe button:hover {
-  background: darkorange;
+  background: linear-gradient(rgb(111, 12, 226),rgb(249, 24, 234));
   transform: scale(1.1);
 }
 

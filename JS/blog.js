@@ -483,7 +483,6 @@ readMoreButton.addEventListener('click', () => {
     blogContainer.appendChild(blogPost);
   }
 });
-
 document.addEventListener("DOMContentLoaded", function () {
     const text = "India is home to some of the most beautiful and diverse trekking trails, ranging from the snow-covered peaks of the Himalayas to the lush green Western Ghats. Whether you're an experienced trekker or a beginner, there's a trail for everyone. Here are some of the top hiking trails that promise adventure, scenic beauty, and an unforgettable experience.";
 
