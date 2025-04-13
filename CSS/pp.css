@@ -869,8 +869,7 @@ body {
 
 .footer-section h3:hover {
   transform: scale(1.1);
-=======
-
+}
   .chatbot-body {
     height: 280px;
   }
@@ -888,7 +887,6 @@ body {
   .close-chatbot {
     font-size: 20px;
   }
-}
 
 .footer {
   min-height: 0vh; /* Ensure the footer takes the full viewport height */
