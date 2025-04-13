@@ -416,22 +416,22 @@ document.addEventListener("DOMContentLoaded", function () {
   function handleSearch(query) {
     query = query.trim().toLowerCase();
     const pages = {
-      home: "../HTML/index.html",
-      services: "../HTML/services.html",
-      homestays: "../HTML/homestays.html",
-      faq: "../HTML/faq.html",
-      contact: "../HTML/contact.html",
-      "privacy policy": "../HTML/pp.html",
-      "terms and condition": "../HTML/t&c.html",
-      service: "../HTML/services.html",
-      homestay: "../HTML/homestays.html",
-      faqs: "../HTML/faq.html",
-      blogs: "../HTML/blog.html",
-      blog: "../HTML/blog.html",
-      Adventure: "../HTML/Adventure.html",
-      Adventures: "../HTML/Adventure.html",
-      pp: "../HTML/pp.html",
-      "t&c": "../HTML/t&c.html",
+      "home": "../index.html",
+      "services": "../services.html",
+      "homestays": "../homestays.html",
+      "faq": "../faq.html",
+      "contact": "../contact.html",
+      "privacy policy": "../pp.html",
+      "terms and condition": "../t&c.html",
+      "service": "../services.html",
+      "homestay": "../homestays.html",
+      "faqs": "../faq.html",
+      "blogs": "../blog.html",
+      "blog": "../blog.html",
+      "Adventure": "../Adventure.html",
+      "Adventures": "../Adventure.html",
+      "pp": "../pp.html",
+      "t&c": "../t&c.html"
     };
     if (pages[query]) {
       window.location.href = pages[query];
@@ -525,32 +525,32 @@ function displayBlogs(filter) {
     filter === "all" ? blogs : blogs.filter((blog) => blog.category === filter);
 
 
-    filteredBlogs.forEach(blog => {
-        const blogElement = document.createElement("div");
-        blogElement.classList.add("blog-post");
-        blogElement.innerHTML = `
+  filteredBlogs.forEach(blog => {
+    const blogElement = document.createElement("div");
+    blogElement.classList.add("blog-post");
+    blogElement.innerHTML = `
             <div class="image-overlay-wrapper">
                 <img src="${blog.image}" alt="${blog.title}" loading="lazy">
                 <div class="image-hover-overlay"></div>
-            </div>
+            </div>`});
 
   filteredBlogs.forEach((blog) => {
     const blogElement = document.createElement("div");
     blogElement.classList.add("blog-post");
     blogElement.innerHTML = `
-            <img src="${blog.image}" alt="${blog.title}" loading="lazy">
+      < img src = "${blog.image}" alt = "${blog.title}" loading = "lazy" >
             <div class="blog-content">
             <h3>${blog.title}</h3>
             <p>${blog.excerpt}</p>
             </div>
             <a href="${blog.link}" class="read-more1">Read More</a>
-        `;
+    `;
     blogContainer.appendChild(blogElement);
   });
-}
+  
 
 displayBlogs("all");
-
+  
 tabButtons.forEach((button) => {
   button.addEventListener("click", () => {
     tabButtons.forEach((btn) => btn.classList.remove("active"));
@@ -558,3 +558,4 @@ tabButtons.forEach((button) => {
     displayBlogs(button.getAttribute("data-category"));
   });
 });
+}  
