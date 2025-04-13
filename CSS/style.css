@@ -696,6 +696,7 @@ ul {
 
 .carousel {
   display: flex;
+  flex-direction: column;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
 }
@@ -2954,9 +2955,6 @@ body {
   color: #fff;
   background-color: #0056b3; /* Darker shade on hover */
     transform: scale(1.05);
-}
-  background: #013e7e;
-  transform: scale(1.05);
 }
 .blog-container {
   display: flex;
