@@ -415,6 +415,7 @@ ul {
   z-index: 2;
   color: white;
   animation: slideUp 1.5s ease-in-out;
+  font-weight: 700;
 }
 
 .hero-content h1 {
@@ -426,15 +427,16 @@ ul {
 }
 
 .hero-content p {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   margin-bottom: 2rem;
-  font-weight: 500;
+  font-weight: 520;
   opacity: 0.9;
+  color: #f8f3f3;
 }
 
 .cta-button {
   display: inline-block;
-  background: linear-gradient(135deg, #09c4ee, #009dff);
+  background: linear-gradient(135deg, #1acef7, #009dff,rgb(67, 67, 222));
   color: white;
   padding: 12px 25px;
   font-size: 1.2rem;
@@ -446,8 +448,8 @@ ul {
 }
 
 .cta-button:hover {
-  background: linear-gradient(135deg, #12bae0, #035d95);
-  transform: scale(1.1);
+  background: linear-gradient(135deg, #12bae0, #012f4b);
+  transform: scale(1.15);
   box-shadow: 0 6px 15px rgba(1, 77, 128, 0.882);
 }
 
@@ -2794,7 +2796,7 @@ body {
   text-align: center;
   font-family: "Uncial Antiqua", serif;
   letter-spacing: 2px;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  text-shadow: 2px 2px 6px rgba(31, 30, 30, 0.2);
   margin-bottom: 5px;
 }
 
@@ -2802,7 +2804,7 @@ body {
   text-align: center;
   font-family: "Uncial Antiqua", serif;
   letter-spacing: 2px;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  text-shadow: 2px 2px 6px rgba(58, 57, 57, 0.2);
   margin-bottom: 20px;
 }
 
