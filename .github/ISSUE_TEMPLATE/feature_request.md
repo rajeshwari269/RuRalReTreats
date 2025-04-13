@@ -20,10 +20,5 @@ labels: enhancement, feature request
 ## 💡 Additional Notes  
 <!-- Any extra details or related information that might be useful. -->
 
-<<<<<<< HEAD
-# 🏆Are you contributing under any open-source program ?
-<!-- Mention it here-->
-=======
 ## 🏆 Are you contributing under any open-source program?  
 <!-- If yes, mention the program name (e.g., GSoC, Hacktoberfest, etc.). -->
->>>>>>> 52bf356c8d9a37fd3539c380255260d4147467bd

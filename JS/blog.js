@@ -391,27 +391,98 @@ window.addEventListener("scroll", function () {
 });
 });
 
+// Get the blog container element
+const blogContainer = document.querySelector('.blog-container');
 
+// Get the read more button element
+const readMoreButton = document.querySelector('.read-more');
 
+// Define the blog posts data
+const blogPosts = [
+  {
+    title: 'Blog Post 1',
+    image: 'https://picsum.photos/200/300',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.'
+  },
+  {
+    title: 'Blog Post 2',
+    image: 'https://picsum.photos/200/301',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.'
+  },
+  {
+    title: 'Blog Post 3',
+    image: 'https://picsum.photos/200/302',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.'
+  }
+];
 
+// Function to generate blog posts
+function generateBlogPosts() {
+  blogPosts.forEach((post) => {
+    const blogPost = document.createElement('div');
+    blogPost.classList.add('blog-post');
 
+    const image = document.createElement('img');
+    image.src = post.image;
+    blogPost.appendChild(image);
 
+    const content = document.createElement('div');
+    content.classList.add('blog-content');
 
+    const title = document.createElement('h3');
+    title.textContent = post.title;
+    content.appendChild(title);
 
+    const paragraph = document.createElement('p');
+    paragraph.textContent = post.content;
+    content.appendChild(paragraph);
 
+    blogPost.appendChild(content);
 
+    blogContainer.appendChild(blogPost);
+  });
+}
 
+// Generate blog posts on page load
+generateBlogPosts();
 
+// Add event listener to read more button
+readMoreButton.addEventListener('click', () => {
+  // Get the current number of blog posts
+  const currentPosts = blogContainer.children.length;
 
+  // Get the total number of blog posts
+  const totalPosts = blogPosts.length;
 
+  // Calculate the number of posts to load
+  const postsToLoad = Math.min(3, totalPosts - currentPosts);
 
+  // Load more blog posts
+  for (let i = 0; i < postsToLoad; i++) {
+    const post = blogPosts[currentPosts + i];
+    const blogPost = document.createElement('div');
+    blogPost.classList.add('blog-post');
 
+    const image = document.createElement('img');
+    image.src = post.image;
+    blogPost.appendChild(image);
 
+    const content = document.createElement('div');
+    content.classList.add('blog-content');
 
+    const title = document.createElement('h3');
+    title.textContent = post.title;
+    content.appendChild(title);
 
+    const paragraph = document.createElement('p');
+    paragraph.textContent = post.content;
+    content.appendChild(paragraph);
 
+    blogPost.appendChild(content);
 
-
+    blogContainer.appendChild(blogPost);
+  }
+});
 
 
 
