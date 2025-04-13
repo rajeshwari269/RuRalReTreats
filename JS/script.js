@@ -538,12 +538,22 @@ function displayBlogs(filter) {
     const blogElement = document.createElement("div");
     blogElement.classList.add("blog-post");
     blogElement.innerHTML = `
+
       < img src = "${blog.image}" alt = "${blog.title}" loading = "lazy" >
             <div class="blog-content">
             <h3>${blog.title}</h3>
             <p>${blog.excerpt}</p>
             </div>
             <a href="${blog.link}" class="read-more1">Read More</a>
+      <div class="image-overlay-wrapper">
+        <img src="${blog.image}" alt="${blog.title}" loading="lazy">
+        <div class="image-hover-overlay"></div>
+      </div>
+      <div class="blog-content">
+        <h3>${blog.title}</h3>
+        <p>${blog.excerpt}</p>
+      </div>
+      <a href="${blog.link}" class="read-more1">Read More</a>
     `;
     blogContainer.appendChild(blogElement);
   });
