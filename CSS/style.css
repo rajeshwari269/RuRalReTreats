@@ -2814,6 +2814,11 @@ body {
   letter-spacing: 2px;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
   margin-bottom: 5px;
+    font-family: "Poppins", sans-serif; /* Modern font for the title */
+    font-size: 2.5rem; /* Larger font size for emphasis */
+    color: #003366; /* Darker color for better readability */
+    text-align: center; /* Centered title */
+    margin-bottom: 20px; /* Space below the title */
 }
 
 .blog-section p {
@@ -2875,7 +2880,15 @@ body {
   font-family: "Poppins", sans-serif; 
   font-size: 1.5em; 
   margin: 15px 0; 
+    font-family: "Poppins", sans-serif; /* Consistent font */
+    font-size: 1.5rem; /* Increased font size for titles */
+    color: #0073e6; /* Highlight color for titles */
+    margin: 15px 0; /* Space around titles */
+    transition: color 0.3s ease; /* Smooth color transition */
 }
+  .blog-post:hover h3 {
+    color: #005bb5; /* Darker shade on hover */
+  }
 
 .blog-container
 {
@@ -2898,6 +2911,12 @@ body {
   margin-bottom: 15px;
 }
 
+.blog-post p {
+  font-size: 1rem; /* Standard text size */
+  color: #666; /* Softer text color */
+  line-height: 1.6; /* Improved line spacing */
+  padding: 0 15px; /* Padding for better readability */
+}
 .blog-post:hover h3 {
   color: #0077cc;
 }
@@ -2955,9 +2974,7 @@ body {
   background-color: #0056b3; /* Darker shade on hover */
     transform: scale(1.05);
 }
-  background: #013e7e;
-  transform: scale(1.05);
-}
+  
 .blog-container {
   display: flex;
   flex-wrap: wrap;
@@ -2994,6 +3011,23 @@ body {
   justify-content: space-between;
   flex-grow: 1;
   padding: 20px;
+}
+
+.read-more1 {
+  background-color: #007bff; /* Primary button color */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Button padding */
+  border-radius: 6px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Bold text */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+  display: inline-block; /* Block display for better alignment */
+  margin: 15px auto; /* Centered margin */
+}
+
+.read-more1:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
 .blog-content h3 {
@@ -3049,6 +3083,31 @@ body {
   .blog-post:hover {
     transform: scale(1.01); /* Subtle scale */
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  }
+
+  @media (max-width: 768px) {
+    .blog-container {
+      grid-template-columns: repeat(2, 1fr); /* Two columns on medium screens */
+    }
+  
+    .blog-post {
+      margin: 10px; /* Reduced margin for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .blog-container {
+      grid-template-columns: 1fr; /* Single column on small screens */
+    }
+  
+    .blog-post {
+      margin: 5px; /* Further reduced margin */
+    }
+  }
+  
+  .blog-post:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
   }
   
   @media (max-width: 768px) {
