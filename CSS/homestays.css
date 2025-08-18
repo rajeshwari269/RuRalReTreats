@@ -2266,8 +2266,8 @@ select:focus {
 }
 .chatbot-button {
   position: fixed;
-  bottom: 80px;
-  right: 20px;
+  bottom: 50px;
+  right: 30px;
   background: linear-gradient(135deg, #005f73, #001f3e);
   color: white;
   padding: 15px;
@@ -2285,20 +2285,20 @@ select:focus {
 }
 .chatbot-button:hover {
   background: linear-gradient(135deg, #0056b3, #003f7f);
-  transform: scale(1.15);
+  transform: scale(1.5px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
 .chatbot-modal {
-  z-index: 1000;
+  z-index: 900;
   display: none;
   position: fixed;
   bottom: 80px;
   right: 20px;
-  width: 350px;
+  width: 400px;
   background: white;
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  transform: translateY(20px);
+  transform: translateY(16px);
   opacity: 0;
   transition: transform 0.4s ease, opacity 0.4s ease;
 }
@@ -2356,12 +2356,12 @@ select:focus {
 {
   background: linear-gradient(135deg, #023364, #009dff);
   transform: scale(1.15);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
 
 .chatbot-modal.active {
   z-index: 1000;
-
+  width: 400px;
   display: block;
   transform: translateY(0);
   opacity: 1;
@@ -2391,6 +2391,7 @@ select:focus {
   background: #f9f9f9;
   scrollbar-width: thin;
   scrollbar-color: #007bff #f1f1f1;
+  -webkit-overflow-scrolling: touch;
 }
 
 .option-button{
@@ -2433,6 +2434,7 @@ select:focus {
 .chatbot-body::-webkit-scrollbar-thumb {
   background: #007bff;
   border-radius: 10px;
+  scroll-behavior: smooth;
 }
 .chat-messages {
   z-index: 1000;
@@ -2499,7 +2501,7 @@ select:focus {
   display: flex;
   padding: 12px;
   background: white;
-  border-top: 1px solid #ddd;
+  /* border-top: 1px solid #ddd; */
   gap: 8px;
   position: sticky;
   bottom: 0;
@@ -2508,14 +2510,14 @@ select:focus {
   z-index: 1000;
   flex: 1;
   padding: 12px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+  /* border: 1px solid #ddd; */
+
   outline: none;
-  transition: border-color 0.3s ease-in-out;
+  /* transition: border-color 0.3s ease-in-out; */
 }
 .chat-input input:focus {
   z-index: 1000;
-  border-color: #007bff;
+  /* border-color: #007bff; */
 }
 .chat-input button {
   z-index: 1000;
@@ -2523,7 +2525,7 @@ select:focus {
   color: white;
   border: none;
   padding: 10px 14px;
-  border-radius: 8px;
+ 
   cursor: pointer;
   transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
