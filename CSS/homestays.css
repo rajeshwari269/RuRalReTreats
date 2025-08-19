@@ -450,7 +450,7 @@ body {
 .cta-buttons {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap:17px;
   animation: fadeInUp 2.5s ease-in-out;
   /* background: linear-gradient(135deg, #0073e6, #00b894); */
     color: white;
@@ -461,7 +461,7 @@ body {
     cursor: pointer;
     transition: background 0.3s ease, transform 0.3s ease;
     text-align: center;
-    display: inline-block;
+    
 }
 
 
@@ -491,6 +491,7 @@ body {
   display: inline-block;
   text-align: center;
   border: 2px solid #000;
+  margin-right:5px;
 }
 .btn-cta:hover {
   background: linear-gradient(135deg, #1680fa, #1e1eff,rgb(217, 3, 217));
@@ -507,6 +508,7 @@ body {
   font-size: 1.2rem;
   font-weight: bold;
   text-transform: uppercase;
+ 
   border-radius: 50px;
   border: 2px solid #fff;
   text-decoration: none;
