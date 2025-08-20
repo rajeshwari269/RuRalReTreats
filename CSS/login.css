@@ -208,6 +208,31 @@ form{
     box-shadow: none;
 }
 
+.error-message {
+    color: red;
+    font-size: 12px;
+    text-align: left;
+    margin-top: 5px;
+    display: none;
+    align-items: center;
+}
+
+.error-message i {
+    margin-right: 5px;
+}
+
+.input-box.error .error-message {
+    display: flex;
+}
+
+.input-box.success input {
+    border: 2px solid #2ecc71;
+}
+
+.input-box.error input {
+    border: 2px solid #e74c3c;
+}
+
 @media screen and (max-width: 650px) {
     .container {
         height: calc(100vh - 40px);
