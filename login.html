@@ -55,19 +55,22 @@
         </div>
 
         <div class="form-box register">
-            <form action="">
+            <form action="" id="register-form" novalidate>
                 <h1>Registration</h1>
                 <div class="input-box">
-                    <input type="text" placeholder="Username" required>
+                    <input type="text" id="username" placeholder="Username" required>
                     <i class="fa-solid fa-user"></i>
+                    <div class="error-message" id="username-error"><i class="fa-solid fa-circle-exclamation"></i><span></span></div>
                 </div>
                 <div class="input-box">
-                    <input type="email" placeholder="Email" required>
+                    <input type="email" id="email" placeholder="Email" required>
                     <i class="fa-solid fa-envelope"></i>
+                    <div class="error-message" id="email-error"><i class="fa-solid fa-circle-exclamation"></i><span></span></div>
                 </div>
                 <div class="input-box">
-                    <input type="password" placeholder="Password" required>
+                    <input type="password" id="password" placeholder="Password" required>
                     <i class="fa-solid fa-lock"></i>
+                    <div class="error-message" id="password-error"><i class="fa-solid fa-circle-exclamation"></i><span></span></div>
                 </div>
                 <button type="submit" class="btn">Register</button>
                 <p>or Register with Social Platforms</p>
