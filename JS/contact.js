@@ -1,6 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
-    emailjs.init("ZhgpiL0kX2Dy-IrNa");  
-});
+
 function subscribeNewsletter() {
     let email = document.getElementById("newsletter-email").value.trim();
     if (email === "") {
@@ -18,6 +16,12 @@ function subscribeNewsletter() {
 function validateEmail(email) {
     const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     return re.test(email);
+}
+const validatePhone = (phone) =>{
+    if (isNaN(phone) || phone.length != 10 || !phone){
+        return false;
+    }
+    return true;
 }
 function sendNewsletterEmail(email) {
     let templateParams = {
@@ -96,6 +100,12 @@ window.addEventListener("load", loadGoogleTranslate);
 
 document.getElementById("contactForm").addEventListener("submit", function(event) {
     event.preventDefault();
+    const phone = document.getElementById("phone");
+    const phoneNumber = phone.value.trim();
+    if (!validatePhone(phoneNumber)){
+        alert("❌ Invalid Phone Number ! Please enter a valid Phone number.")
+        return;
+    }
     document.querySelector(".form-status").textContent = "✅ Thank you for reaching out! We will contact you soon.";
 });
 
