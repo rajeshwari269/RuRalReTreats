@@ -11,6 +11,22 @@ document.addEventListener("DOMContentLoaded", function () {
     backToTopBtn.addEventListener("click", () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
     });
+    const carousel = document.querySelector("#tours .carousel-wrapper");
+    const prevBtn = document.getElementById("prevBtn");
+    const nextBtn = document.getElementById("nextBtn");
+
+    const cardWidth = () => {
+        const card = document.querySelector("#tours .package-card");
+        return card ? card.offsetWidth + 18 : 300; // card width + gap
+    };
+
+    nextBtn.addEventListener("click", () => {
+        carousel.scrollBy({ left: cardWidth(), behavior: "smooth" });
+    });
+
+    prevBtn.addEventListener("click", () => {
+        carousel.scrollBy({ left: -cardWidth(), behavior: "smooth" });
+    });
     const chatButton = document.getElementById("chatButton");
     const chatModal = document.getElementById("chatModal");
     const sendMessageButton = document.getElementById("sendMessage");
