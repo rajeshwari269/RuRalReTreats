@@ -449,6 +449,7 @@ body {
   outline: none;
   display: flex;
   justify-content: space-between;
+  transition: background 0.3s ease-in-out;
 }
 
 .faq-question:hover {
@@ -457,6 +458,7 @@ body {
 }
 
 .faq-answer {
+
   display: none;
   padding: 15px;
   font-size: 16px;
@@ -464,6 +466,37 @@ body {
   border-top: 1px solid #ff8000;
   box-shadow: 0 4px 8px #000;
 }
+
+.faq-answer.show {
+  display: block;
+
+}
+
+.faq-answer p {
+  margin: 0;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.6s ease-out forwards;
+  animation-delay: 0.1s;
+}
+
+/* Keyframes for paragraph fade in from bottom */
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(30px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
+
+
+
+
 
 .chatbot-button {
   position: fixed;
