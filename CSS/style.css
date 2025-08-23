@@ -402,6 +402,7 @@ ul {
   .auth-buttons {
     gap: 10px;
   }
+  
 }
 
 @media only screen and (min-width: 768px) {
@@ -581,7 +582,29 @@ ul {
 
 @media screen and (max-width: 480px) {
   .hero-banner {
-    height: 60vh;
+    height: 80vh;
+    margin: 1.5rem 1rem 2rem;
+    border-radius: 5px;
+  }
+
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    font-size: 0.9rem;
+    padding: 8px 18px;
+    
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .hero-banner {
+    height: 100vh;
     margin: 1.5rem 1rem 2rem;
     border-radius: 5px;
   }
@@ -1051,7 +1074,11 @@ ul {
   .destination-card .rating {
     font-size: 0.9rem;
   }
-
+  
+  .destination-image {
+    width: 90%;
+    height: 70%;
+  }
   .learn-more {
     font-size: 0.95rem;
     padding: 0.4rem 0.8rem;
@@ -1102,6 +1129,10 @@ ul {
     font-size: 0.85rem;
   }
 
+  .destination-image {
+    width: 90%;
+    height: 50%;
+  }
   .learn-more {
     font-size: 0.9rem;
     padding: 0.3rem 0.7rem;
