@@ -65,15 +65,12 @@ We welcome contributions ! Follow the steps below to get started:
    - Go to the original repository and click on "New Pull Request.
    - Select your branch and submit the pull request for review.
 
-## Our Contributors 🤝
+
 
 <a href="https://github.com/rajeshwari269/RuRalReTreats/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=https://github.com/rajeshwari269/RuRalReTreats"/>
 </a>
 
-## License 🛡️
-
-This project is licensed under the MIT License. See the [LICENSE](link-to-license-file) file for more details.
 
 ## 📬 Contact
 
