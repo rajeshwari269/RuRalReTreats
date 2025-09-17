@@ -18,7 +18,7 @@ deployed at:
 
 ## Getting Started for Contributors 🧑🏻‍💻
 
-We welcome contributions to HackerZGuide! Follow the steps below to get started:
+We welcome contributions ! Follow the steps below to get started:
 
 1. **Fork the Repository**
 
