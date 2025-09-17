@@ -1,17 +1,4 @@
-<div align="center">
-  
-[![Open Source Love](https://firstcontributions.github.io/open-source-badges/badges/open-source-v1/open-source.svg)](https://github.com/firstcontributions/open-source-badges)
-[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
-[![Contributors Welcome](https://img.shields.io/badge/contributors-welcome-0b7cbd)](https://github.com/nikohoffren/fork-commit-merge/pulls)
-[![First Contributors](https://img.shields.io/badge/first-contributors-0b7cbd)](https://github.com/nikohoffren/fork-commit-merge/pulls)
-[![PR:s Welcome](https://img.shields.io/badge/PR:s-welcome-0b7cbd)](https://github.com/nikohoffren/fork-commit-merge/pulls)
-[![Issues](https://img.shields.io/github/issues/Nayanika1402/RuRal-ReTreats.svg?style=flat)](https://github.com/Nayanika1402/RuRal-ReTreats/issues)
-[![Stars](https://img.shields.io/github/stars/Nayanika1402/RuRal-ReTreats.svg?style=flat)](https://github.com/Nayanika1402/RuRal-ReTreats/stars)
-[![Forks](https://img.shields.io/github/forks/Nayanika1402/RuRal-ReTreats.svg?style=flat)](https://github.com/Nayanika1402/RuRal-ReTreats/forks)
-[![MIT License](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
-[![Follow](https://img.shields.io/badge/follow-%40Nayanika1402-1DA1F2?logo=twitter&style=social)](https://github.com/Nayanika1402) 
-</div>
+
 
 # What is RuralRetreats ?🤷🏽‍♂
 
