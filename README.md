@@ -42,7 +42,7 @@ We welcome contributions to HackerZGuide! Follow the steps below to get started:
    - Use the following command to clone the forked repository to your local machine:
 
      ```bash
-     git clone https://github.com/Nayanika1402/RuRal-ReTreats.git
+     git clone https://github.com/rajeshwari269/RuRalReTreats.git
      ```
 
 3. **Create a Branch**
@@ -80,8 +80,8 @@ We welcome contributions to HackerZGuide! Follow the steps below to get started:
 
 ## Our Contributors 🤝
 
-<a href="https://github.com/Nayanika1402/RuRal-ReTreats/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Nayanika1402/RuRal-ReTreats" />
+<a href="https://github.com/rajeshwari269/RuRalReTreats/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=https://github.com/rajeshwari269/RuRalReTreats"/>
 </a>
 
 ## License 🛡️
@@ -90,9 +90,9 @@ This project is licensed under the MIT License. See the [LICENSE](link-to-licens
 
 ## 📬 Contact
 
-If you have any questions, feel free to open an issue or reach out to the project [maintainer](https://www.linkedin.com/in/nayanika-mukherjee-76a24027b/).
+If you have any questions, feel free to open an issue or reach out to the project [maintainer]www.linkedin.com/in/rajeshwari-mandadi-77456632a
 
-- [Nayanika Mukherjee](https://github.com/Nayanika1402)
+https://github.com/rajeshwari269
 
 **Please ⭐ this repository to show some love. Your support is appreciated!**
 
