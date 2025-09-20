@@ -4,7 +4,7 @@
 
 RuralRetreats is a unique website designed to connect travelers with the charm of rural life. It bridges the gap between rural areas and tourism by offering an extensive platform for booking authentic rural homestays. Visitors can immerse themselves in the traditions and culture of rural communities by staying in the homes of local residents. This not only provides a personalized travel experience but also promotes sustainable tourism, empowering rural households and preserving their heritage.
 
-ru-ral-re-treats-puce.vercel.app
+(https://ru-ral-re-treats-puce.vercel.app)
 
 ## Tech Stack ⚙️
 
